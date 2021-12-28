@@ -9,3 +9,9 @@ def register(request):
         return HttpResponse(request.POST.get("username"))
     else:
         return render(request, "blog/register.html", context={})
+
+def login(request):
+    if request.method == "POST":
+        return HttpResponse(request.POST.get("username"))
+    else:
+        return render(request, "blog/login.html", context={})
