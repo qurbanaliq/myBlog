@@ -1,4 +1,5 @@
 from django.shortcuts import redirect, render
+from django.urls import reverse
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login as _login, logout as _logout
 from django.contrib.auth.decorators import login_required
@@ -27,11 +28,13 @@ def login(request):
             password = request.POST.get("password")
             user = authenticate(request, username=username, password=password)
             if user is not None:
-                _login(request, user)
-                next = request.POST.get("next")
-                if next:
-                    redirect(next)
-                return redirect("/blog")
+                if user.is_active:
+                    _login(request, user)
+                    nxt = request.POST.get("next")
+                    if nxt:
+                        return redirect(nxt)
+                    return redirect(reverse("blog:index"))
+                return HttpResponse("Inactive user")
             return render(request, "blog/login.html", context={"error": "Wrong credidentials"})
         return render(request, "blog/login.html", context={})
     return redirect("/blog")
