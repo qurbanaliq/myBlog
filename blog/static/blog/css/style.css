@@ -1,0 +1,311 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	margin: 0px;
+	/* background-color: #d0d0d0; */
+	background-image: url('/static/blog/images/vintage-concrete.png')
+}
+
+.white-back {
+	background-color: white;
+	color: #0070a0;
+}
+
+.white {
+	color: white;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.orange {
+	color: orange;
+}
+
+.gray {
+	color: gray;
+}
+
+.light-gray {
+	color: gray;
+}
+
+.font-x-large {
+	font-size: 16pt;
+}
+
+.plain-link:link, .plain-link:visited, .plain-link:active {
+	text-decoration: none;
+	padding: 5px;
+}
+
+.font-large {
+	font-size: 14pt;
+}
+
+/* default font size is 12 - Normal or medium */
+
+.font-small {
+	font-size: 10pt;
+}
+
+.font-x-small {
+	font-size: 8pt;
+}
+
+.capsule {
+	border-radius: 7px;
+	color: white;
+	padding: 3px 10px;
+}
+
+.green-back {
+	background-color: green;
+}
+
+.orange-back {
+	background-color: orange;
+}
+
+.red-back {
+	background-color: red;
+}
+
+.gray-back {
+	background-color: gray;
+}
+
+.black-back {
+	background-color: black;
+}
+
+.light-gray-back {
+	background-color: lightGray;
+}
+
+.light-gray-border {
+	border-color: lightGray;
+}
+
+form input[type=text], form input[type=password], form input[type=number],
+form input[type=time],
+form input[type=submit], form input[type=date], form select, textarea{
+	background-color: white;
+	border: solid 1px #0070a0;
+	margin: 1px;
+}
+
+form input[type=text]:focus, form input[type=password]:focus,
+form select:focus {
+	box-shadow: 0 0 5px #0070a0;
+}
+
+.box-shadow-green {
+	border: solid 1px #0070a0;
+	box-shadow: 0 0 5px #0070a0;
+
+}
+
+form input[type=submit]:hover {
+	background-color: #0070a0;
+	color: white;
+	cursor:pointer;
+}
+
+button::-moz-focus-inner, input[type=submit]::-moz-focus-inner {
+  border: 0;
+}
+
+label {
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+textarea {
+	resize: none;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.navbar-button:link, .navbarButton:visited, .navbarButton:active {
+	text-decoration: none;
+	text-align: center;
+    margin-right: 5px;
+}
+
+.header-button:link, .header-button:visited, .header-button:active {
+	text-decoration: none;
+	text-align: center;
+	color: yellow;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+}
+
+.navbar-button:hover, .theme-color {
+	color: white;
+	background-color: #0070a0;
+}
+
+.theme-font-color {
+	color: #0070a0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.simple-container {
+/*	background-color: #cccccc; */
+	border-top: solid 1px #0070a0;
+	border-left: solid 1px #0070a0;
+	margin: 10px;
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+	padding: 5px;
+}
+
+.box {
+	background-color: white;
+	box-shadow: 0 0 10px #808080;
+	color: #0070a0;
+/*	border-left: solid 1px #0070a0; */
+	border-top: solid 2px #0070a0;
+}
+
+.box-simple {
+	background-color: white;
+	color: #0070a0;
+	border-top: solid 1px #0070a0;
+}
+
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.row-simple {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.line {
+	height: 1px;
+	width: 100%;
+}
+
+.vline-left {
+	border-left: solid 1px;
+}
+
+.vline-right {
+	border-right: solid 1px;
+}
+
+.row-plain {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.row-item {
+	margin: 10px;
+}
+
+.col-1 {
+	padding: 4px;
+	width: 8.33%;
+}
+.col-2 {
+	padding: 4px;
+	width: 16.66%;
+}
+.col-3 {
+	padding: 4px;
+	width: 25%;
+}
+.col-4 {
+	padding: 4px;
+	width: 33.33%;
+}
+.col-5 {
+	padding: 4px;
+	width: 41.66%;
+}
+.col-6 {
+	padding: 4px;
+	width: 50%;
+}
+.col-7 {
+	padding: 4px;
+	width: 58.33%;
+}
+.col-8 {
+	padding: 4px;
+	width: 66.66%;
+}
+.col-9 {
+	padding: 4px;
+	width: 75%;
+}
+.col-10 {
+	padding: 4px;
+	width: 83.33%;
+}
+.col-11 {
+	padding: 4px;
+	width: 91.66%;
+}
+.col-12 {
+	padding: 4px;
+	width: 100%;
+}
+
+.hand-cursor {
+  	cursor: pointer;
+}
+
+.panel {
+	display: none;
+	padding-left: 6px;
+	padding-right: 6px;
+	overflow: hidden;
+}
