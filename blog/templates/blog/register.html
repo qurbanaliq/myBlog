@@ -1,25 +1,35 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
-<form method="post" action="">
-    {% csrf_token %}
-    <label for="username">Username</label>
-    <input name="username" type="text">
-    <br><br>
-    <label for="email">Email</label>
-    <input name="email" type="email">
-    <br><br>
-    <label for="first_name">First Name</label>
-    <input name="first_name" type="text">
-    <br><br>
-    <label for="last_name">Last Name</label>
-    <input name="last_name" type="text">
-    <br><br>
-    <label for="password">Password</label>
-    <input name="password" type="password">
-    <br><br>
-    <input type="submit" name="submit" value="Register">
-    <p class="red">{{ error }}</p>
-</form>
+    <form method="post" action="">
+        {% csrf_token %}
+        <div class="row">
+            <label for="username" class="col-2">Username</label>
+            <input name="username" type="text" class="col-3">
+        </div>
+        <div class="row">
+            <label for="email" class="col-2">Email</label>
+            <input name="email" type="email" class="col-3">
+        </div>
+        <div class="row">
+            <label for="first_name" class="col-2">First Name</label>
+            <input name="first_name" type="text" class="col-3">
+        </div>
+        <div class="row">
+            <label for="last_name" class="col-2">Last Name</label>
+            <input name="last_name" type="text" class="col-3">
+        </div>
+        <div class="row">
+            <label for="password" class="col-2">Password</label>
+            <input name="password" type="password" class="col-3">
+        </div>
+        <div class="row-simple">
+            <div class="col-4"></div>
+            <input type="submit" name="submit" value="Register" class="col-1">
+        </div>
+        <div class="row-simple">
+            <p class="red col-5 text-right">{{ error }}</p>
+        </div>
+    </form>
 </div>
 {% endblock %}

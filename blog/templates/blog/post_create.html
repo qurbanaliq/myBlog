@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="row">
+            <label for="title" class="col-2"> Title</label>
+            <input type="text" name="title" class="col-6">
+        </div>
+        <div class="row">
+            <label for="body" class="col-2">Post Text</label>
+            <textarea name="body" rows="30" class="col-8"></textarea>
+        </div>
+        <div class="row-simple">
+            <div class="col-2"></div>
+            <input type="submit" name="submit" value="Create" class="col-1">
+        </div>
+    </form>
+</div>
+{% endblock %}
+

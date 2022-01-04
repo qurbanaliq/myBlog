@@ -3,7 +3,7 @@ body {
 	font-size: 12pt;
 	margin: 0px;
 	/* background-color: #d0d0d0; */
-	background-image: url('/static/blog/images/vintage-concrete.png')
+	/* background-image: url('/static/blog/images/vintage-concrete.png') */
 }
 
 .white-back {
@@ -93,7 +93,7 @@ body {
 }
 
 form input[type=text], form input[type=password], form input[type=number],
-form input[type=time],
+form input[type=time], form input[type="email"],
 form input[type=submit], form input[type=date], form select, textarea{
 	background-color: white;
 	border: solid 1px #0070a0;
@@ -308,4 +308,8 @@ textarea {
 	padding-left: 6px;
 	padding-right: 6px;
 	overflow: hidden;
+}
+
+textarea {
+	resize:vertical;
 }

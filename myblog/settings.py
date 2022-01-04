@@ -27,7 +27,7 @@ DEBUG = True
 
 LOGIN_URL = "blog:login"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["testserver", "localhost"]
 
 
 # Application definition
