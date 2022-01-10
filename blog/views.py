@@ -7,13 +7,11 @@ from django.contrib.auth.models import User
 from django.db.models import Q
 from . import models
 
-@login_required
 def index(request):
     """shwo the index page for the blog
     """
-    return HttpResponse("You are at blog's index, {}".format(
-            request.user.first_name
-        ))
+    posts = models.Post.objects.all().order_by("-date_published")
+    return render(request, "blog/index.html", {"posts": posts})
 
 def register(request):
     """shows the registration form to the user and registers the user
