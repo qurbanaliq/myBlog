@@ -1,10 +1,11 @@
 {% extends "base.html" %}
+{% load markdown_extras %}
 {% block content %}
     <div class="container">
         {% for post in posts %}
             <h2><a href="{% url 'blog:post_detail' post.id %}">{{ post.title }}</a></h2>
             <h5>Published on {{ post.date_published|date }}, by {{ post.author.first_name }} ({{ post.author.username }})</h5>
-            <p>{{ post.post_text| truncatewords:100 }}</p>
+            <sapn>{{ post.post_text|truncatewords:100 }}</sapn>
             {% if not forloop.last %}
             <hr>
             {% endif %}
